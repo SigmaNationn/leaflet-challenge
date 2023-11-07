@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Earthquake Visualization</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #2196F3, #4CAF50);
+            color: #fff;
+        }
+
+        .title {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%; /* Adjust the height as needed */
+        }
+
+        #map {
+            width: 90%; /* Adjust the width as needed */
+            max-width: 1920px;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .data-title {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .data-title h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Earthquake Visualization</h1>
+    </div>
+
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
